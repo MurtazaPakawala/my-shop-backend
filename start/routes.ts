@@ -19,7 +19,6 @@
 */
 
 import Route from '@ioc:Adonis/Core/Route'
+import fs from 'fs'
 
-Route.get('/item/:itemId', async ({ params }) => {
-  return { hello: params.itemId }
-})
+Route.resource('/items', 'ItemsController').apiOnly()
