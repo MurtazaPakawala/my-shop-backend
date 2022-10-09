@@ -19,6 +19,5 @@
 */
 
 import Route from '@ioc:Adonis/Core/Route'
-import fs from 'fs'
 
 Route.resource('/items', 'ItemsController').apiOnly()
