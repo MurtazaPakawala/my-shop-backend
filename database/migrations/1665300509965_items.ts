@@ -9,6 +9,7 @@ export default class extends BaseSchema {
       table.string('title')
       table.bigint('price')
       table.bigint('qty')
+      table.string('img')
       /**
        * Uses timestamptz for PostgreSQL and DATETIME2 for MSSQL
        */

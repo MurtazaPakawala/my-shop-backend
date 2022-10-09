@@ -10,6 +10,8 @@ export default class Item extends BaseModel {
   public price: number
   @column()
   public qty: number
+  @column()
+  public img: string
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime
 
